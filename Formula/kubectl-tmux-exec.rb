@@ -1,9 +1,9 @@
 class KubectlTmuxExec < Formula
     desc "A kubectl plugin that uses Tmux to multiplex commands to pods"
     homepage "https://github.com/predatorray/kubectl-tmux-exec"
-    url "https://github.com/predatorray/kubectl-tmux-exec/releases/download/v0.0.2/kubectl-tmux-exec-0.0.2.tar.gz"
-    version "0.0.2"
-    sha256 "1699e634a19777ad8dc1e78e2f36893b11ca5c3cf0ac1f83f641af47d8060f81"
+    url "https://github.com/predatorray/kubectl-tmux-exec/releases/download/v0.0.3/kubectl-tmux-exec-0.0.3.tar.gz"
+    version "0.0.3"
+    sha256 "a373f96a5e57bba9545e824ed15a8cd9c9ddf00fdcc5357d3f69255d071f02ab"
     depends_on "gnu-getopt"
     depends_on "tmux"
 
