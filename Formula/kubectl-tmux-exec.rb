@@ -12,8 +12,8 @@ class KubectlTmuxExec < Formula
     def install
         prefix.install "LICENSE"
         prefix.install "VERSION"
-        libexec.install Dir["*"]
-        (bin/"kubectl-tmux_exec").write_env_script "#{libexec}/bin/kubectl-tmux_exec", :GNU_GETOPT_PREFIX => Formula["gnu-getopt"].opt_prefix
+        libexec.install "bin/kubectl-tmux_exec"
+        (bin/"kubectl-tmux_exec").write_env_script "#{libexec}/kubectl-tmux_exec", :GNU_GETOPT_PREFIX => Formula["gnu-getopt"].opt_prefix
     end
 
     test do
