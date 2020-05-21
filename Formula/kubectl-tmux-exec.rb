@@ -1,9 +1,9 @@
 class KubectlTmuxExec < Formula
     desc "A kubectl plugin that uses Tmux to multiplex commands to pods"
     homepage "https://github.com/predatorray/kubectl-tmux-exec"
-    url "https://github.com/predatorray/kubectl-tmux-exec/releases/download/v0.0.4/kubectl-tmux-exec-0.0.4.tar.gz"
-    version "0.0.4"
-    sha256 "cd5f475653031b1e408dd0d893c3c22592e89ac981142c41e62007bca56716bd"
+    url "https://github.com/predatorray/kubectl-tmux-exec/releases/download/v0.1.0/kubectl-tmux-exec-0.1.0.tar.gz"
+    version "0.1.0"
+    sha256 "7c7d18f497524dff098c737c0fe8e031347d0d201864c22c52984eab06ca33e4"
     depends_on "gnu-getopt"
     depends_on "tmux"
 
@@ -11,6 +11,7 @@ class KubectlTmuxExec < Formula
 
     def install
         prefix.install "LICENSE"
+        prefix.install "VERSION"
         libexec.install Dir["*"]
         (bin/"kubectl-tmux_exec").write_env_script "#{libexec}/bin/kubectl-tmux_exec", :GNU_GETOPT_PREFIX => Formula["gnu-getopt"].opt_prefix
     end
