@@ -5,7 +5,6 @@ class KubectlTmuxExec < Formula
   version "0.3.0"
   sha256 "ed37019e56bac84362a255b7236d1d83e7b487a792f2689137ab5c75978f3009"
 
-  bottle :unneeded
   depends_on "gnu-getopt"
   depends_on "tmux"
 
