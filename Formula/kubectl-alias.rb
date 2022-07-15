@@ -1,8 +1,8 @@
 class KubectlAlias < Formula
   desc "Missing alias command for kubectl"
   homepage "https://github.com/predatorray/kubectl-alias"
-  url "https://github.com/predatorray/kubectl-alias/releases/download/v0.0.1/kubectl-alias-0.0.1.tar.gz"
-  sha256 "2439ccff1ee6f3f869cc015686699362a271fd2dd237be8ab732411354ebedf7"
+  url "https://github.com/predatorray/kubectl-alias/releases/download/v0.0.2/kubectl-alias-0.0.2.tar.gz"
+  sha256 "662bee04bbdb5cbfb9c1a5494f6ccbbc4b0e9c81b8f304d7a8f787c03ade5ad3"
   license "MIT"
 
   depends_on "gnu-getopt"
@@ -17,10 +17,9 @@ class KubectlAlias < Formula
 
   def caveats
     <<~EOS
-      IMPORTANT! Please also add this line to your rc file.
-      ```
-      export PATH="$PATH:#{prefix}/alias"
-      ```
+      IMPORTANT! Please add this line to your rc (~/.zsh or ~/.bashrc) file.
+
+        export PATH="$PATH:#{prefix}/alias"
     EOS
   end
 
