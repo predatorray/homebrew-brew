@@ -1,8 +1,8 @@
 class KubectlAlias < Formula
   desc "Missing alias command for kubectl"
   homepage "https://github.com/predatorray/kubectl-alias"
-  url "https://github.com/predatorray/kubectl-alias/releases/download/v0.0.2/kubectl-alias-0.0.2.tar.gz"
-  sha256 "662bee04bbdb5cbfb9c1a5494f6ccbbc4b0e9c81b8f304d7a8f787c03ade5ad3"
+  url "https://github.com/predatorray/kubectl-alias/releases/download/v0.0.3/kubectl-alias-0.0.3.tar.gz"
+  sha256 "b56756a0ea409147d689339ef2951c105f0a7a17bcfd6c8bcb3fe41f53efe33c"
   license "MIT"
 
   depends_on "gnu-getopt"
