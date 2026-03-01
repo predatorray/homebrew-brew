@@ -24,6 +24,6 @@ class KubectlAlias < Formula
   end
 
   test do
-    system "#{bin}/kubectl-alias", "--version"
+    system bin/"kubectl-alias", "--version"
   end
 end
