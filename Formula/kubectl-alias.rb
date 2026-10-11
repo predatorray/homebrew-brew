@@ -12,7 +12,7 @@ class KubectlAlias < Formula
     prefix.install "VERSION"
     libexec.install "bin/kubectl-alias"
     (bin/"kubectl-alias").write_env_script "#{libexec}/kubectl-alias",
-      GNU_GETOPT_PREFIX: Formula["gnu-getopt"].opt_prefix
+      GNU_GETOPT_PREFIX: formula_opt_prefix("gnu-getopt")
   end
 
   def caveats
